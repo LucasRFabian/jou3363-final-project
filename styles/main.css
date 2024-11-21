@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url(../fonts/JetBrainsMono-Regular.ttf);
+}
+@font-face {
+    font-family: 'JetBrainsMono-SemiBold';
+    src: url(../fonts/JetBrainsMono-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'JetBrainsMono-Bold';
+    src: url(../fonts/JetBrainsMono-Bold.ttf);
+}
+h1 {
+    font-family: 'JetBrainsMono-SemiBold', monospace;
+}
+.bg-orange {
+    background: #f26429;
+}
+.bg-orange-select {
+    background: #f22929;
+}
+:root,
+[data-bs-theme=light] {
+    --bs-danger: #f26429;
+    --bs-font-monospace: 'JetBrainsMono', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
