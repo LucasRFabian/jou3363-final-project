@@ -13,6 +13,10 @@
 h1 {
     font-family: 'JetBrainsMono-SemiBold', monospace;
 }
+h2 {
+    font-family: 'JetBrainsMono-Bold';
+    font-size: 4.96rem;
+}
 .bg-orange {
     background: #f26429;
 }
