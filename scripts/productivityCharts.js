@@ -1,5 +1,5 @@
-//Single-Threaded Power Consumption
-Highcharts.chart('singleThreadConsumption', {
+//Blender Rendering
+Highcharts.chart('blenderRendering', {
     chart: {
         type: 'bar',
     },
@@ -10,7 +10,7 @@ Highcharts.chart('singleThreadConsumption', {
         text: ''
     },
     xAxis: {
-        categories: ['Ryzen 7 7800X3D', 'Core Ultra 7 265K', 'Ryzen 7 9700X', 'Core i5-14600K', 'Ryzen 7 5800X3D', 'Ryzen 5 9600X', 'Ryzen 7 9800X3D', 'Ryzen 7 7700X', 'Core Ultra 9 285K', 'Core i7-14700K', 'Ryzen 9 9950X'],
+        categories: ['Core Ultra 9 285K', 'Ryzen 9 9950X', 'Core Ultra 7 265K', 'Core i7-14700K', 'Ryzen 7 9800X3D', 'Core i5-14600K', 'Ryzen 7 9700X', 'Ryzen 7 7700X', 'Ryzen 7 7800X3D', 'Ryzen 5 9600X', 'Ryzen 7 5800X3D'],
         title: {
             text: null
         },
@@ -29,7 +29,7 @@ Highcharts.chart('singleThreadConsumption', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Power Consumption (watts)',
+            text: 'Time to Render (seconds)',
             align: 'high'
         },
         labels: {
@@ -38,7 +38,7 @@ Highcharts.chart('singleThreadConsumption', {
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' W'
+        valueSuffix: ' s'
     },
     plotOptions: {
         bar: {
@@ -54,20 +54,20 @@ Highcharts.chart('singleThreadConsumption', {
     },
     credits: {
         text: 'TechPowerUp',
-        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/23.html'
+        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/9.html'
     },
     series: [{
-        name: 'Power Draw',
-        data: [14, 21, 22, 22, 22, 22, {
-            y: 23,
+        name: 'Render Time',
+        data: [54.9, 56.0, 65.7, 76.7, {
+            y: 101.0,
             color: '#f22929'
-        }, 24, 26, 35, 36, ],
+        }, 105.8, 114.5, 121.5, 131.7, 139.5, 172.6],
         color: '#777'
     }]
 });
 
-//Multi-Threaded Power Consumption
-Highcharts.chart('multiThreadConsumption', {
+//Video Editing
+Highcharts.chart('videoEditing', {
     chart: {
         type: 'bar',
     },
@@ -78,7 +78,7 @@ Highcharts.chart('multiThreadConsumption', {
         text: ''
     },
     xAxis: {
-        categories: ['Ryzen 7 7800X3D', 'Ryzen 5 9600X', 'Ryzen 7 9700X', 'Ryzen 7 5800X3D', 'Ryzen 7 7700X', 'Core i5-14600K', 'Core Ultra 7 265K', 'Ryzen 7 9800X3D', 'Ryzen 9 9950X', 'Core i7-14700K', 'Core Ultra 9 285K'],
+        categories: ['Ryzen 9 9950X', 'Core i7-14700K', 'Ryzen 7 9800X3D', 'Core Ultra 9 285K', 'Core i5-14600K', 'Ryzen 7 9700X', 'Core Ultra 7 265K', 'Ryzen 7 7700X', 'Ryzen 5 9600X', 'Ryzen 7 7800X3D', 'Ryzen 7 5800X3D'],
         title: {
             text: null
         },
@@ -97,7 +97,7 @@ Highcharts.chart('multiThreadConsumption', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Power Consumption (watts)',
+            text: 'Object Tracking Completion Time (seconds)',
             align: 'high'
         },
         labels: {
@@ -106,7 +106,7 @@ Highcharts.chart('multiThreadConsumption', {
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' W'
+        valueSuffix: ' s'
     },
     plotOptions: {
         bar: {
@@ -122,20 +122,20 @@ Highcharts.chart('multiThreadConsumption', {
     },
     credits: {
         text: 'TechPowerUp',
-        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/23.html'
+        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/12.html'
     },
     series: [{
-        name: 'Power Draw',
-        data: [74, 80, 80, 89, 135, 145, 155, {
-            y: 155,
+        name: 'Encode Time',
+        data: [10.7, 10.8, {
+            y: 11.8,
             color: '#f22929'
-        }, 220, 222, 235],
+        }, 11.9, 12.2, 12.6, 12.7, 13.0, 13.3, 13.9, 16.5],
         color: '#777'
     }]
 });
 
-//Gaming Efficiency
-Highcharts.chart('gamingEfficiency', {
+//Media Encoding
+Highcharts.chart('mediaEncoding', {
     chart: {
         type: 'bar',
     },
@@ -146,7 +146,7 @@ Highcharts.chart('gamingEfficiency', {
         text: ''
     },
     xAxis: {
-        categories: ['Ryzen 7 7800X3D', 'Ryzen 7 9800X3D', 'Ryzen 7 5800X3D', 'Ryzen 5 9600X', 'Ryzen 7 7700X', 'Ryzen 7 9700X', 'Core Ultra 7 265K', 'Core i5-14600K', 'Core Ultra 9 285K', 'Ryzen 9 9950X', 'Core i7-14700K'],
+        categories: ['Ryzen 9 9950X', 'Core Ultra 9 285K', 'Core Ultra 7 265K', 'Core i7-14700K', 'Core i5-14600K', 'Ryzen 7 9800X3D', 'Ryzen 7 7700X', 'Ryzen 7 9700X', 'Ryzen 7 7800X3D', 'Ryzen 5 9600X', 'Ryzen 7 5800X3D'],
         title: {
             text: null
         },
@@ -165,7 +165,7 @@ Highcharts.chart('gamingEfficiency', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Frames per Watt',
+            text: 'Time to Encode (seconds)',
             align: 'high'
         },
         labels: {
@@ -174,7 +174,7 @@ Highcharts.chart('gamingEfficiency', {
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' FPS'
+        valueSuffix: ' s'
     },
     plotOptions: {
         bar: {
@@ -190,14 +190,14 @@ Highcharts.chart('gamingEfficiency', {
     },
     credits: {
         text: 'TechPowerUp',
-        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/23.html'
+        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/12.html'
     },
     series: [{
-        name: 'Frames per Watt',
-        data: [4.25, {
-            y: 3.30,
+        name: 'Completion Time',
+        data: [24.2, 24.9, 28.0, 29.3, 39.5, {
+            y: 39.7,
             color: '#f22929'
-        }, 3.05, 2.80, 2.66, 2.59, 2.41, 2.41, 2.01, 1.80, 1.63],
+        }, 44.1, 45.2, 47.8, 53.9, 57.5],
         color: '#777'
     }]
 });

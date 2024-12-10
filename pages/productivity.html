@@ -29,6 +29,32 @@
                 </ul>
             </div>
         </div>
+        <div class="row">
+            <div class="mx-auto col-md-10 text-center">
+                <h2 class="pb-3" id="productivityHeader">Productivity Performance</h2>
+                <p>The X3D chips have always performed worse than their non-X3D counterparts, and that trend continues with the 9800X3D. However, the 9800X3D tends to outperform its predessor by a significant margin in most productivity applications.</p>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="ms-auto d-flex flex-column align-items-center justify-content-center col-md-5">
+                <h3 class="text-center fs-2">Rendering (Blender)</h3>
+                <figure class="w-100 h-auto" id="blenderRendering"></figure>
+            </div>
+            <div class="me-auto d-flex flex-column align-items-center justify-content-center col-md-5">
+                <h3 class="text-center fs-2">Video Editing (Premiere)</h3>
+                <figure class="w-100 h-auto" id="videoEditing"></figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mx-auto col-md-10">
+                <h3 class="text-center fs-2">Media Encoding (H.264)</h3>
+                <figure class="w-100 h-auto" id="mediaEncoding" class="chart"></figure>
+            </div>
+        </div>
     </div>
+
+    <!--Scripts-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="../scripts/productivityCharts.js"></script>
 </body>
 </html>
