@@ -135,3 +135,71 @@ Highcharts.chart('multiThreadConsumption', {
         color: '#777'
     }]
 });
+
+//Gaming Efficiency
+Highcharts.chart('gamingEfficiency', {
+    chart: {
+        type: 'bar',
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Ryzen 7 7800X3D', 'Ryzen 5 9600X', 'Ryzen 7 9700X', 'Ryzen 7 5800X3D', 'Ryzen 7 7700X', 'Core i5-14600K', 'Core Ultra 7 265K', 'Ryzen 7 9800X3D', 'Ryzen 9 9950X', 'Core i7-14700K', 'Core Ultra 9 285K'],
+        title: {
+            text: null
+        },
+        gridLineWidth: 1,
+        lineWidth: 0,
+        labels: {
+            reserveSpace: false,
+            align: 'left',
+            x: 7,
+            style: {
+                color: '#ffffff',
+                fontFamily: 'JetBrainsMono',
+            }
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Frames per Watt',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        },
+        gridLineWidth: 0
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            borderRadius: '50%',
+            dataLabels: {
+                enabled: true,
+            },
+            groupPadding: 0.1
+        }
+    },
+    legend: {
+        enabled: false
+    },
+    credits: {
+        text: 'TechPowerUp',
+        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/23.html'
+    },
+    series: [{
+        name: 'Frames per Watt',
+        data: [74, 80, 80, 89, 135, 145, 155, {
+            y: 155,
+            color: '#f22929'
+        }, 220, 222, 235],
+        color: '#777'
+    }]
+});
