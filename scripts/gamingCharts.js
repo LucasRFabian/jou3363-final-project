@@ -1,5 +1,5 @@
-//Blender Rendering
-Highcharts.chart('blenderRendering', {
+//1080p Performance
+Highcharts.chart('1080pPerformance', {
     chart: {
         type: 'bar',
     },
@@ -10,7 +10,7 @@ Highcharts.chart('blenderRendering', {
         text: ''
     },
     xAxis: {
-        categories: ['Core Ultra 9 285K', 'Ryzen 9 9950X', 'Core Ultra 7 265K', 'Core i7-14700K', 'Ryzen 7 9800X3D', 'Core i5-14600K', 'Ryzen 7 9700X', 'Ryzen 7 7700X', 'Ryzen 7 7800X3D', 'Ryzen 5 9600X', 'Ryzen 7 5800X3D'],
+        categories: ['Ryzen 7 9800X3D', 'Ryzen 7 7800X3D', 'Core i7-14700K', 'Ryzen 9 9950X', 'Ryzen 7 9700X', 'Ryzen 5 9600X', 'Core Ultra 9 285K', 'Ryzen 7 7700X', 'Core i5-14600K', 'Core Ultra 7 265K', 'Ryzen 7 5800X3D'],
         title: {
             text: null
         },
@@ -29,7 +29,7 @@ Highcharts.chart('blenderRendering', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Time to Render (seconds)',
+            text: 'Frames per Second (FPS)',
             align: 'high'
         },
         labels: {
@@ -38,7 +38,7 @@ Highcharts.chart('blenderRendering', {
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' s'
+        valueSuffix: ' FPS'
     },
     plotOptions: {
         bar: {
@@ -54,20 +54,20 @@ Highcharts.chart('blenderRendering', {
     },
     credits: {
         text: 'TechPowerUp',
-        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/9.html'
+        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/18.html'
     },
     series: [{
-        name: 'Render Time',
-        data: [54.9, 56.0, 65.7, 76.7, {
-            y: 101.0,
+        name: 'Framerate',
+        data: [{
+            y: 199.7,
             color: '#f22929'
-        }, 105.8, 114.5, 121.5, 131.7, 139.5, 172.6],
+        }, 193.1, 182.5, 180.0, 178.4, 177.5, 176.3, 175.9, 172.9, 172.1, 171.7],
         color: '#777'
     }]
 });
 
-//Video Editing
-Highcharts.chart('videoEditing', {
+//1440p Performance
+Highcharts.chart('1440pPerformance', {
     chart: {
         type: 'bar',
     },
@@ -78,7 +78,7 @@ Highcharts.chart('videoEditing', {
         text: ''
     },
     xAxis: {
-        categories: ['Ryzen 9 9950X', 'Core i7-14700K', 'Ryzen 7 9800X3D', 'Core Ultra 9 285K', 'Core i5-14600K', 'Ryzen 7 9700X', 'Core Ultra 7 265K', 'Ryzen 7 7700X', 'Ryzen 5 9600X', 'Ryzen 7 7800X3D', 'Ryzen 7 5800X3D'],
+        categories: ['Ryzen 7 9800X3D', 'Ryzen 7 7800X3D', 'Core i7-14700K', 'Core Ultra 9 285K', 'Core Ultra 7 265K', 'Core i5-14600K', 'Ryzen 5 9600X', 'Ryzen 9 9950X', 'Ryzen 7 9700X', 'Ryzen 7 7700X', 'Ryzen 7 5800X3D'],
         title: {
             text: null
         },
@@ -97,7 +97,7 @@ Highcharts.chart('videoEditing', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Object Tracking Completion Time (seconds)',
+            text: 'Frames per Second (FPS)',
             align: 'high'
         },
         labels: {
@@ -106,7 +106,7 @@ Highcharts.chart('videoEditing', {
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' s'
+        valueSuffix: ' FPS'
     },
     plotOptions: {
         bar: {
@@ -122,20 +122,21 @@ Highcharts.chart('videoEditing', {
     },
     credits: {
         text: 'TechPowerUp',
-        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/12.html'
+        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/19.html'
     },
     series: [{
-        name: 'Encode Time',
-        data: [10.7, 10.8, {
-            y: 11.8,
+        name: 'Framerate',
+        data: [{
+            y: 161.6,
             color: '#f22929'
-        }, 11.9, 12.2, 12.6, 12.7, 13.0, 13.3, 13.9, 16.5],
+        }, 156.8, 153.2, 150.7, 149.4, 149.9, 148.6, 148.5, 148.3, 148.1, 147.5],
         color: '#777'
     }]
 });
 
-//Media Encoding
-Highcharts.chart('mediaEncoding', {
+//4K Performance
+//1440p Performance
+Highcharts.chart('4KPerformance', {
     chart: {
         type: 'bar',
     },
@@ -146,7 +147,7 @@ Highcharts.chart('mediaEncoding', {
         text: ''
     },
     xAxis: {
-        categories: ['Ryzen 9 9950X', 'Core Ultra 9 285K', 'Core Ultra 7 265K', 'Core i7-14700K', 'Core i5-14600K', 'Ryzen 7 9800X3D', 'Ryzen 7 7700X', 'Ryzen 7 9700X', 'Ryzen 7 7800X3D', 'Ryzen 5 9600X', 'Ryzen 7 5800X3D'],
+        categories: ['Ryzen 7 9800X3D', 'Ryzen 7 7800X3D', 'Core i7-14700K', 'Ryzen 9 9950X', 'Core Ultra 9 285K', 'Ryzen 7 5800X3D', 'Core i5-14600K', 'Ryzen 5 9600X', 'Ryzen 7 7700X', 'Core Ultra 7 265K', 'Ryzen 7 9700X'],
         title: {
             text: null
         },
@@ -165,7 +166,7 @@ Highcharts.chart('mediaEncoding', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Time to Encode (seconds)',
+            text: 'Frames per Second (FPS)',
             align: 'high'
         },
         labels: {
@@ -174,7 +175,7 @@ Highcharts.chart('mediaEncoding', {
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' s'
+        valueSuffix: ' FPS'
     },
     plotOptions: {
         bar: {
@@ -190,14 +191,14 @@ Highcharts.chart('mediaEncoding', {
     },
     credits: {
         text: 'TechPowerUp',
-        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/11.html'
+        href: 'https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/20.html'
     },
     series: [{
-        name: 'Completion Time',
-        data: [24.2, 24.9, 28.0, 29.3, 39.5, {
-            y: 39.7,
+        name: 'Framerate',
+        data: [{
+            y: 101.4,
             color: '#f22929'
-        }, 44.1, 45.2, 47.8, 53.9, 57.5],
+        }, 101.1, 99.8, 99.0, 98.9, 98.8, 98.7, 98.7, 98.6, 98.4, 98.3 ],
         color: '#777'
     }]
 });
