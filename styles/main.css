@@ -17,6 +17,9 @@ h2 {
     font-family: 'JetBrainsMono-Bold';
     font-size: 4.96rem;
 }
+.chart {
+    height: 80rem;
+}
 .bg-orange {
     background: #f26429;
 }
